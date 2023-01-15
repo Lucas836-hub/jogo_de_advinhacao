@@ -1,6 +1,6 @@
 
 #criado por Lucas gabriel
-# github : github.com/Lucas836
+# github : https://github.com/Lucas836-hub/
 # instagra : @lucas_git
 
 from random import randint
