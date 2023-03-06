@@ -116,10 +116,10 @@ def passagem_tempo(a, b, c=0):
     num2 = [int(data_atual[0] + data_atual[1] + data_atual[2] + data_atual[3]), int(data_atual[5] + data_atual[6] ),int(data_atual[8] + data_atual[9])]
     resp = [num[2] - num2[2], num[1] - num2[1], num[0] - num2[0]]
     if (resp[0] < c and resp[1] <= 0 or resp[2] < 0 or resp[1] < 0 and resp[2] <= 0):
-        print(f"passagem tempo arquivo {a} github {b} = {resp[0]} {resp[1]} {resp[2]}")
+        #print(f"passagem tempo arquivo {a} github {b} = {resp[0]} {resp[1]} {resp[2]}")
         return True
     else:
-        print(f"passagem tempo arquivo {a} github {b} = {resp[0]} {resp[1]} {resp[2]} False")
+        #print(f"passagem tempo arquivo {a} github {b} = {resp[0]} {resp[1]} {resp[2]} False")
         return False
 
 # n_del = lista de arquivos que nao poderam ser excluidos ex: banco de dados , arquivos txt com dados
