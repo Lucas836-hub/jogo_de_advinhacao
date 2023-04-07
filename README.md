@@ -14,3 +14,7 @@ pode ser rodado tambem no pydroid (IDE para desenvolvimento e python no android)
 ## Execucao
 
      python3 função.py
+     
+## Requerimentos
+
+     python3 -m pip install -r requirements.txt
