@@ -102,6 +102,21 @@ def pasta_up(comand):
         #print(f"\033[92mV {data_hora} bjk {bjk} gh {gh} arquivo {arquivo} ler {ler}\033[m")
         return bjk
 
+def instalador_biblioteca():#r nome da pasta requirements ou semelhante
+    pst=["requirements.txt","Requirements.txt","REQUIREMENTS.txt","requerimentos.txt","Requerimentos.txt","REQUERIMENTOS.txt"]
+    down=False
+    for n in pst:
+        if os.path.exists(n):
+            down=True
+            break
+    if down:
+        arquivo = open(n, "r")
+        a = arquivo.read().strip().split("\n")
+        for b in a:
+            if b == "":
+                pass
+            else:
+                os.system(f"pip3 install {b}")
 
 def passagem_tempo(a, b, c=0):
     # a = data do arquivo
@@ -239,6 +254,8 @@ def atualizar(url,n_del=[]):
         if entrou and git_final[efj][0] != "lesviaupload":
             desatualizados.append(git_final[efj][0])
 
+    #   DOWNLOAD
+
     if desatualizados != []:
 
         oav=""
@@ -265,6 +282,7 @@ def atualizar(url,n_del=[]):
 
                 os.system(f"wget {site}")
         pasta_up("UP")
+        instalador_biblioteca()
 
 try:
     atualizar("https://github.com/Lucas836-hub/repository_up",["README.md","requirements.txt"])
